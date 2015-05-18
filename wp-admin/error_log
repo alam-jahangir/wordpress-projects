@@ -1,0 +1,10 @@
+[11-May-2015 17:35:03 UTC] PHP Warning:  require(/home/exploro123/public_html/startsite/wp-content/themes/start/inc/custom-header.php): failed to open stream: No such file or directory in /home/exploro123/public_html/startsite/wp-content/themes/start/functions.php on line 382
+[11-May-2015 17:35:03 UTC] PHP Fatal error:  require(): Failed opening required '/home/exploro123/public_html/startsite/wp-content/themes/start/inc/custom-header.php' (include_path='.:/opt/php54/lib/php') in /home/exploro123/public_html/startsite/wp-content/themes/start/functions.php on line 382
+[14-May-2015 11:46:43 UTC] PHP Fatal error:  Call to undefined function set_current_screen() in /home/exploro123/public_html/startsite/wp-admin/admin-header.php on line 19
+[14-May-2015 11:48:17 UTC] PHP Fatal error:  Call to undefined function set_current_screen() in /home/exploro123/public_html/startsite/wp-admin/admin-header.php on line 19
+[14-May-2015 12:26:28 UTC] PHP Warning:  include_once(about-us.php): failed to open stream: No such file or directory in /home/exploro123/public_html/startsite/wp-content/themes/start/functions.php on line 410
+[14-May-2015 12:26:28 UTC] PHP Warning:  include_once(): Failed opening 'about-us.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/exploro123/public_html/startsite/wp-content/themes/start/functions.php on line 410
+[14-May-2015 12:26:31 UTC] PHP Warning:  include_once(about-us.php): failed to open stream: No such file or directory in /home/exploro123/public_html/startsite/wp-content/themes/start/functions.php on line 410
+[14-May-2015 12:26:31 UTC] PHP Warning:  include_once(): Failed opening 'about-us.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/exploro123/public_html/startsite/wp-content/themes/start/functions.php on line 410
+[14-May-2015 12:41:18 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/exploro123/public_html/startsite/wp-content/themes/start/functions.php on line 118
+[14-May-2015 13:25:18 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/exploro123/public_html/startsite/wp-content/themes/start/inhalt.php on line 325

@@ -1,0 +1,419 @@
+
+/*
+Theme Name: StartSite
+Author: Md. Jahangir Alam
+Author URI: https://de.linkedin.com/in/tipur03
+Description: kshf sugfisu gisuhfi isugfis isugiug
+Version: 4.2.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentyfifteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Reset
+ * 2.0 - Genericons
+ * 3.0 - Typography
+ * 4.0 - Elements
+ * 5.0 - Forms
+ * 6.0 - Navigations
+ *   6.1 - Links
+ *   6.2 - Menus
+ * 7.0 - Accessibility
+ * 8.0 - Alignments
+ * 9.0 - Clearings
+ * 10.0 - Header
+ * 11.0 - Widgets
+ * 12.0 - Content
+ *    12.1 - Posts and pages
+ *    12.2 - Post Formats
+ *    12.3 - Comments
+ * 13.0 - Footer
+ * 14.0 - Media
+ *    14.1 - Captions
+ *    14.2 - Galleries
+ * 15.0 - Multisite
+ * 16.0 - Media Queries
+ *    16.1 - Mobile Large
+ *    16.2 - Tablet Small
+ *    16.3 - Tablet Large
+ *    16.4 - Desktop Small
+ *    16.5 - Desktop Medium
+ *    16.6 - Desktop Large
+ *    16.7 - Desktop X-Large
+ * 17.0 - Print
+ */
+
+
+/**
+ * 1.0 - Reset
+ *
+ * Resetting and rebuilding styles have been helped along thanks to the fine
+ * work of Eric Meyer, Nicolas Gallagher, Jonathan Neal, and Blueprint.
+ */
+
+body {
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #3a597d;
+}
+.navbar {
+    padding: 15px 0;
+}
+.slider {
+    position: relative;
+    top: -81px;
+}
+.slider img {
+    width: 100%;
+}
+.navbar-default {
+    opacity: .8;
+}
+.navbar-header a img {
+    margin-top: 8px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+.jumbotron {
+    position: absolute;
+    /*top: 400px;*/
+    bottom: 100px;
+    right: 230px;
+    margin: 0;
+    opacity: 0.8;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+    padding: 0px;
+}
+section {
+    width: 100%;
+    padding: 0px 0;
+}
+.more_info {
+    background: #3a597d;
+    padding: 15px 0;
+}
+.more_info h1 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 34px;
+    line-height:71px;
+}
+.footer_btn {
+    background: #3f83d3;
+    padding: 10px;
+    font-size: 18px;
+    float: left;
+    color: #fff;
+    text-align:center;
+}
+.footer_btn:hover {
+    text-decoration: none;
+    background: #3f83d3;
+}
+.footer_body {
+    padding: 80px 0 40px 0;
+    background: #eaefe9;
+}
+.footer_menu {
+    float: left;
+}
+.footer_menu h3 {
+    color: #3a597d;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 10px;
+}
+.footer_menu ul {
+    padding: 0;
+    margin: 0;
+}
+.footer_menu ul li {
+    float: left;
+    list-style-type: none;
+    width: 100%;
+    line-height: 40px;
+}
+.footer_menu ul li a {
+    color: #3f83d3;
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+/** Added By Jahangir **/
+.footer_menu .menu li a:hover{padding:0px;}
+.dropdown-menu .menu li a{padding:10px}
+
+.footer_middle {
+    float: left;
+}
+.footer_middle h3 {
+    color: #3a597d;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 15px;
+}
+.footer_middle p {
+    color: #3f83d3;
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer_bg {
+    float: left;
+    width: 100%;
+}
+.footer_copyright {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    background: #d4d8d4;
+}
+.footer_copyright p {
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: 14px;
+    color: #3f83d3;
+    margin-bottom: 0;
+}
+.footer_copyright p a {
+    font-weight: bold;
+    color: #3a597d;
+}
+.navbar {
+    margin-bottom: 0;
+}
+.container {
+    max-width: 960px;
+}
+.well {
+    float: left;
+    border-radius: 0;
+    background: #fff;
+    padding: 15px;
+    border-top: none;
+    width:100%;
+}
+.well h3 {
+    color: #3a597d;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.well p {
+    font-size: 16px;
+}
+.well p a{}
+.well p a:hover{
+    color:#fff;
+}
+.content h1 {
+    color: #3a597d;
+    margin-top: 0;
+}
+.content h4 {
+    color: #3a597d;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.content p {
+    font-size: 16px;
+}
+.home_body {
+    width: 100%;
+    padding: 0 0 100px 0;
+}
+.dropdown-menu {
+    width: auto;
+    min-width: 0;
+    border: none;
+    border-radius: 0;
+    min-width: 160px;
+    background: url(images/mbg.png) repeat-x top left;
+    padding: 5px 0 0 0;
+}
+.dropdown-menu > li > a {
+    padding: 10px 20px;
+    background: #fff;
+}
+.dropdown-menu > li > a:hover {
+    color: red;
+}
+.btn-primary {
+    background: #3f83d3;
+    border-radius: 0;
+    border: none;
+}
+.jumbotron h3 {
+    margin-top: 0;
+    padding: 20px 20px 0 20px;
+}
+.jumbotron p {
+    margin-bottom: 0;
+    padding: 20px;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+    border-radius: 0;
+}
+.slider img.banner {
+    min-height: 200px;
+}
+.err404 {
+    padding: 50px 0;
+    text-algin: center;
+    min-height: 250px;
+}
+@media (max-width: 767px) {
+    .dropdown-menu {
+        background: none;
+    }
+    .navbar-toggle {
+        margin-right: 0;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .nav > li > a {
+        padding: 3px 15px;
+        font-size:15px;
+    }
+    .slider {
+        position: relative;
+        top: -51px;
+    }
+    .jumbotron {
+        position: absolute;
+        top: 220px;
+        right: 15px;
+        margin: 0;
+    }
+    .jumbotron h3 {
+        font-size: 14px;
+        font-weight: normal;
+        padding: 5px;
+        margin-bottom: 0;
+    }
+    .jumbotron p {
+        padding: 0 5px 5px 5px;
+    }
+    .btn-group-lg > .btn, .btn-lg {
+        padding: 5px;
+    }
+    .btn-group-lg > .btn, .btn-lg {
+        font-size: 14px;
+    }
+    .home_body {
+        margin-bottom: 10px;
+    }
+    .more_info h1 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 5px;
+    }
+
+    nav #navbar {
+        position: absolute;
+        z-index: 999;
+        float: left;
+        width: 100%;
+        background: #fff;
+        color: #000;
+        left: 0px;
+        opacity: 0.9;
+    }
+    .menu li a {
+        list-style-type: none;
+        float: left;
+        padding: 10px 0;
+        width: 100%;
+        font-size:15px;
+    }
+    .menu li a:hover {
+        float: left;
+        width: 100%;
+        padding: 10px 0;
+        width: 100%;
+        text-decoration: none;
+    }
+    /** Added By Jahangir **/
+    .footer_menu .menu li a{line-height: 25px;}
+    .footer_menu .menu li a:hover{padding: 10px 0;}
+    .slider .container {padding: 0px;}
+    .jumbotron {position: relative; display: block; padding: 0px 15px; clear: both; top:0px; right:0px; overflow: hidden; opacity:1;}
+    .jumbotron h3{font-size:24px}
+    .jumbotron .btn-lg{font-size:18px;}
+    .jumbotron h3{font-size:24px; padding:0px 15px;}
+    .jumbotron .btn-lg{font-size:18px; margin: 0px 15px;}
+    .first_block{display: block; width: 100%; }
+    .second_block {width: 100%; display: inline-table;}
+    .right {float:right;} 
+    .left {float:left;} 
+}
+.tr_pr {
+    width: 100%;
+    height: auto;
+}
+.tr_pr ul {
+    padding: 0;
+    margin: 0;
+}
+.tr_pr ul li {
+    list-style-type: none;
+    float: right;
+    padding: 0 10px;
+}
+.tr_pr ul li a {
+    text-decoration: none;
+    color: #3a597d;
+    font-weight: bold;
+}
+.tr_pr ul li a:hover {
+    color: red;
+}
+.textwidget {
+    color: #333;
+    font-family: "Helvetica", Arial, sans-serif;
+}
+.footer_middle div.textwidget {
+    color: #3f83d3;
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu li {
+    list-style-type: none;
+}
+.menu li a {
+    list-style-type: none;
+    float: left;
+    width: 100%;
+}
+#menu-top-menu li a {
+    background: #fff;
+    color: #000; /** Added By Jahangir **/
+}
+#menu-top-menu li a:hover {
+    background: #ddd;
+}
+.menu li a:hover {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    width: 100%;
+    text-decoration: none;
+}
+ul#menu-top-menu{
+    padding:0;
+}
+
